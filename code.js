@@ -1,3 +1,5 @@
+// worked with Jacob Johnson
+
 function fib(n) 
 {
     array = new Array(n);
