@@ -28,3 +28,10 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Invariant: f(n - 1) = f(n - 2) + f(n - 3)
+
+Reasoning:
+Let f(n) be the nth term of the Fibonnacci sequence.
+
+At the beginning of each recursive call we can say that for any n > 3, f(n - 1) can be written as f(n - 2) + f(n - 3)
