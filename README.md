@@ -32,7 +32,7 @@ your answer to this markdown file.
 Invariant:
 - fib(0) = 0
 - fib(1) = 1
-- $\forall n > 2 fib(n) = fib(n - 1) + fib(n - 2)
+- $\forall n > 2$ fib(n) = fib(n - 1) + fib(n - 2)
 
 We can use this information to prove the function correct by inserting the values into the function such that
 
