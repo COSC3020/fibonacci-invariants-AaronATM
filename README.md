@@ -32,6 +32,8 @@ your answer to this markdown file.
 Invariant: f(n - 1) = f(n - 2) + f(n - 3)
 
 Reasoning:
-Let f(n) be the nth term of the Fibonnacci sequence.
+At the beginning of each recursive call we can say that for any n > 3, fib(n - 1) can be written as fib(n - 2) + fib(n - 3), as well as fib(0) = 0 and fib(1) = 1.
 
-At the beginning of each recursive call we can say that for any n > 3, f(n - 1) can be written as f(n - 2) + f(n - 3)
+We can use this information to prove the function correct by inserting the values into the function such that
+
+array = [0, 1, fib(n - 2) + fib(n - 3), fib(n - 2) + fib(n - 3), ...] = [0, 1, 1, 2, ...]
