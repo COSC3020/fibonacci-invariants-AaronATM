@@ -29,11 +29,11 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-Invariant: f(n - 1) = f(n - 2) + f(n - 3)
-
-Reasoning:
-At the beginning of each recursive call we can say that for any n > 3, fib(n - 1) can be written as fib(n - 2) + fib(n - 3), as well as fib(0) = 0 and fib(1) = 1.
+Invariant:
+- fib(0) = 0
+- fib(1) = 1
+- $\forall n > 2 fib(n) = fib(n - 1) + fib(n - 2)
 
 We can use this information to prove the function correct by inserting the values into the function such that
 
-array = [0, 1, fib(n - 2) + fib(n - 3), fib(n - 2) + fib(n - 3), ...] = [0, 1, 1, 2, ...]
+array = [0, 1, fib(n - 1) + fib(n - 2), fib(n - 1) + fib(n - 2), ...] = [0, 1, 1, 2, ...]
