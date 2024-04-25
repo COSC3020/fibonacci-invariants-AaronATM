@@ -40,5 +40,6 @@ We can use this information to prove the function correct by inserting the value
 array = [0, 1, fib(n - 1) + fib(n - 2), fib(n - 1) + fib(n - 2), ...] = [0, 1, 1, 2, ...]
 
 // Discussed with Jacob Johnson
+
 Updated answer:
 At the beginning of every nth recursion the values that need to be equal to the corresponding values of the fibonacci sequence are array[n - 1] and array[n - 2]. The previous answer was was not correct in this sense because the recursion does not depend on fib(0) = 0, fib(1) = 1, or any specific fib(n) explicitly.
