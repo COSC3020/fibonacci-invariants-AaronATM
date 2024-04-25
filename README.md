@@ -30,6 +30,7 @@ most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
 Previous answer:
+
 Invariant:
 - fib(0) = 0
 - fib(1) = 1
