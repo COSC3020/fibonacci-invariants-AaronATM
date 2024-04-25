@@ -29,6 +29,7 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
+Previous answer:
 Invariant:
 - fib(0) = 0
 - fib(1) = 1
@@ -37,3 +38,7 @@ Invariant:
 We can use this information to prove the function correct by inserting the values into the function such that
 
 array = [0, 1, fib(n - 1) + fib(n - 2), fib(n - 1) + fib(n - 2), ...] = [0, 1, 1, 2, ...]
+
+// Discussed with Jacob Johnson
+Updated answer:
+At the beginning of every nth recursion the values that need to be equal to the corresponding values of the fibonacci sequence are array[n - 1] and array[n - 2]. The previous answer was was not correct in this sense because the recursion does not depend on fib(0) = 0, fib(1) = 1, or any specific fib(n) explicitly.
