@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/rzkZS2Jf)
 # Fibonacci Invariants
 
 Recall the definition of the Fibonacci series: the first number is 0, the second
@@ -27,3 +28,19 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Previous answer:
+
+Invariant:
+- fib(0) = 0
+- fib(1) = 1
+- $\forall n > 2$ fib(n) = fib(n - 1) + fib(n - 2)
+
+We can use this information to prove the function correct by inserting the values into the function such that
+
+array = [0, 1, fib(n - 1) + fib(n - 2), fib(n - 1) + fib(n - 2), ...] = [0, 1, 1, 2, ...]
+
+// Discussed with Jacob Johnson
+
+Updated answer:
+At the beginning of every nth recursion the values that need to be equal to the corresponding values of the fibonacci sequence are array[n - 1] and array[n - 2]. The previous answer was was not correct in this sense because the recursion does not depend on fib(0) = 0, fib(1) = 1, or any specific fib(n) explicitly.
